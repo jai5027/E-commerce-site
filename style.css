@@ -35,6 +35,27 @@ img{
 
 /* Navbar */
 
+header{
+    background-color: #fff;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.navbar{
+    height: 11vh;
+    justify-content: space-between;
+    max-width: 85%;
+    margin: auto;
+}
+
+.navlist{
+    gap: 3rem;
+}
+
+.navbar, .navlist{
+    display: flex;
+    align-items: center;
+}
+
 .logo{
    font-size: 1.8rem;
    font-weight: bold;
@@ -51,14 +72,31 @@ span{
     font-weight: 500;
 }
 
+
+.icon{
+    margin: .8rem;
+    font-size: 1rem;
+    color: var(--light-black);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.icon:hover{
+    background: var(--secondary-clr);
+}
+
 .link-active, 
-.link:hover{
+.link:hover,
+.icon:hover{
     color: var(--primary-clr);
 }
 
-.icon{
-    font-size: .9rem;
-    color: var(--light-black);
+.hamburger{
+    font-size: 1.7rem;
+    color: var(--primary-clr);
+    display: none;
 }
 
 

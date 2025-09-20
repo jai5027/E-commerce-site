@@ -37,6 +37,15 @@ img{
     padding-top: 4rem;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
+
+.secondary-bg{
+    background: var(--secondary-clr);
+    padding-block: 2.2rem;
+}
+
 /* Navbar */
 
 header{
@@ -220,5 +229,162 @@ button:hover{
 }
 
 h2{
+    font-size: 1.7rem;
+    line-height: 4rem;
+    color: var(--light-black);
+    font-weight: 500;
+    text-align: center;
+}
+
+.line{
+    background-color: var(--primary-clr);
+    width: 70px;
+    height: 2.5px;
+    margin: auto;
+}
+
+.card-container{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    margin: 50px 100px 0px 100px;
+    padding: 0 3rem;
+}
+
+.card{
+    flex: 1;
+    padding-block: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.card .card-content{
+    text-align: center;
+}
+
+.card:hover{
+    box-shadow: 0px 5px 19px 1px rgba(36, 11, 12, .15);
+    z-index: 3;
+}
+
+.card-container .card img{
+    height: 75%;
+}
+
+.card .add-to-card{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    transform: translateY(10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.card:hover .add-to-card{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.amount{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.sale::before,
+.new::before{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    padding: .1rem 1rem;
+    color: white;
+    font-weight: 300;
+}
+
+.sale::before{
+    content: "Sale";
+    background: var(--primary-clr);
+}
+
+.new::before{
+    content: "New";
+    background: var(--tag-clr);
+}
+
+.sale-container{
+    padding-block: 3rem;
+    text-align: center;
+    background-image: url("images/sale-image.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 5%;
+}
+
+.sale-container h3{
+    font-weight: 200;
+    font-size: 1.56rem;
+    line-height: 1.6rem;
+    text-transform: uppercase;
+}
+
+.sale-container h1{
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 4.7rem;
+}
+
+.sale-container .line{
+    width: 15%;
+    background: #c5c5c5;
+}
+
+.sale-container h4{
     font-size: 1.4rem;
+    color: #6e6e6e;
+    line-height: 3.5rem;
+}
+
+.secondary-bg .conatiner{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 11% 0 11%;
+    text-align: center;
+}
+
+.box{
+    flex-basis:200px;
+}
+
+.box .fa-solid{
+    font-size: 1.5rem;
+    color:var(--primary-clr);
+}
+
+h5 a{
+    font-size: 1.1rem;
+    color: var(--light-black);
+    font-weight: 500;
+}
+
+.des{
+    color:#6e6e6e;
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.blog-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 2rem;
+    margin: 3rem 7rem 2rem 7rem;
+}
+
+.blog-box img{
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
